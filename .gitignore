@@ -1,0 +1,11 @@
+node_modules/
+public/build/
+public/files/
+public/preview/
+public/upload/
+public/customBrContent/
+public/editContent/
+public/uploadDonaters/
+.idea/
+heapdump/
+.cache-loader/

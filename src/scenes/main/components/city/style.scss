@@ -1,0 +1,34 @@
+@import "../../../../../public/scss/main";
+
+.article {
+  margin: 0 10px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  width: 160px;
+  border: 1px solid $colorBorder;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  position: relative;
+  &_header {
+    width: 100%;
+    @include font(14px, bold);
+  }
+  &_close {
+    display: flex;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: $colorBorder;
+    border-radius: 20px;
+    svg {
+      margin: auto;
+    }
+  }
+}

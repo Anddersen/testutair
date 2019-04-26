@@ -1,0 +1,7 @@
+@mixin font($size, $bold: 400, $lineHeight: normal, $family: $robo) {
+  font: $bold #{$size/16px}rem / $lineHeight $family;
+}
+
+@mixin fontCon($size, $bold: 400, $lineHeight: normal, $family: $roboCon) {
+  font: $bold #{$size/16px}rem / $lineHeight $family;
+}

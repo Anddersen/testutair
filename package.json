@@ -1,0 +1,64 @@
+{
+  "name": "testutair",
+  "version": "1.0.0",
+  "description": "test for utair",
+  "scripts": {
+    "start:dev": "webpack-dev-server --port 3051 --config webpack.dev.config.js",
+    "build": "webpack",
+    "jest": "jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "Vadim Baranov",
+  "license": "ISC",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-portal": "^4.2.0",
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-router-redux": "^4.0.8",
+    "react-select": "^2.4.3",
+    "react-tooltip": "^3.10.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-flow-comments": "^6.22.0",
+    "babel-polyfill": "^6.26.0",
+    "cache-loader": "^2.0.1",
+    "css-loader": "^2.1.1",
+    "empty": "^0.10.1",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-flowtype": "^3.6.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^3.0.1",
+    "jest": "^24.5.0",
+    "node-sass": "^4.11.0",
+    "resolve-url-loader": "^3.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

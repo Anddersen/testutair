@@ -1,0 +1,39 @@
+@import "../../../public/scss/main";
+
+.main {
+  min-width: 1400px;
+  width: 100%;
+  height: 100%;
+  &_header {
+    width: 100%;
+    height: 70px;
+    background: $backgrounHeader;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    @include fontCon(24px, 400, 70px);
+  }
+  &_content {
+    width: 100%;
+    display: flex;
+    @include font(14px);
+    & > div {
+      margin: 50px auto;
+      width: 100%;
+      max-width: 640px;
+      h1 {
+        text-align: center;
+        @include font(32px);
+      }
+    }
+    &_items {
+      margin: 40px 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &_mycity {
+      text-align: center;
+    }
+  }
+}
